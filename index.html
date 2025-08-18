@@ -47,11 +47,11 @@
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '30920620554251036');
+    fbq('init', '1242860317590496');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=30920620554251036&ev=PageView&noscript=1" /></noscript>
+      src="https://www.facebook.com/tr?id=1242860317590496&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBH24MSF" height="0" width="0"
@@ -62,13 +62,22 @@
 <body>
   <div class="d-lg-flex">
     <div class="position-relative d-lg-inline-block mx-lg-auto">
-      <a href="https://gamex988.com">
+      <a href="https://gamex988.com" id="lead-link">
         <img id="bg" src="assets/20250814_new.png">
 
       </a>
     </div>
   </div>
 
+  <script>
+    // Meta Pixel Lead Event Tracking
+    document.getElementById('lead-link').addEventListener('click', function() {
+      fbq('track', 'Lead', {
+        source: 'website_click',
+        url: 'https://gamex988.com'
+      });
+    });
+  </script>
 
 </body>
 
